@@ -1,4 +1,6 @@
-// Base API URL: Automatically switches between local testing and production
+// Base API URL: Automaticallyconst API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'http://localhost:5000/api'
+  : 'https://quest-consultancy-backend-xxxx.onrender.com/api'; // <-- Paste your exact Render URL here switches between local testing and production
 const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? 'http://localhost:5000/api'
   : 'https://quest-consultancy-backend.onrender.com/api';
